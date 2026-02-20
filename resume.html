@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mitchell E. Nielsen</title>
+<style>
+body {
+    color: #000000;
+    background: #EEEEEE;
+    font: 1.1em "Times New Roman";
+    line-height: 1.2;
+    margin: 40px 0;
+}
+#resume {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 40px 60px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 2px 2px 4px #AAAAAA;
+    -webkit-box-shadow: 2px 2px 4px #AAAAAA;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 200%;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    border-bottom: 1px solid #000000;
+    text-transform: uppercase;
+    font-size: 130%;
+    margin: 1em 0 0 0;
+    padding: 0;
+}
+h3 {
+    font-size: 100%;
+    margin: 0.8em 0 0.3em 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+p {
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    }
+ul {
+    padding: 0;
+    margin: 0 1.5em;
+    }
+/* ul immediately after h1 = contact list */
+h1 + ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    }
+h1 + ul > li {
+    display: inline;
+    white-space: pre;
+    list-style-type: none;
+}
+h1 + ul > li:after {
+    content: "  \2022  ";
+}
+h1 + ul > li:last-child:after {
+    content: "";
+}
+/* p immediately after contact list = summary */
+h1 + ul + p {
+    margin: 1em 0;
+}
+@media print {
+    body {
+        font-size: 10pt;
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+    #resume {
+        margin: 0;
+        padding: 0;
+        border: 0px;
+        background: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    /* Do not underline abbr tags in PDF */
+    abbr {
+        text-decoration: none;
+        font-variant: none;
+    }
+    /* Make links black in PDF */
+    /* Move this outside the print block to apply this in HTML too */
+    a, a:link, a:visited, a:hover {
+        color: #000000;
+        text-decoration: underline;
+    }
+}
+@page {
+    /* Change margins and paper size of PDF */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/@page */
+    size: letter;
+    margin: 0.5in 0.8in;
+}
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 16pt;
+        margin: 0;
+        padding: 0;
+        background: #FFFFFF !important;
+    }
+    #resume {
+        margin: 0;
+        padding: 1em;
+        border: 0px;
+        background: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}
+
+</style>
+</head>
+<body>
+<div id="resume">
+<h1>Mitchell E. Nielsen</h1>
+<ul>
+<li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#98;&#111;&#120;&#64;&#109;&#105;&#116;&#99;&#104;&#110;&#46;&#109;&#101;">&#105;&#110;&#98;&#111;&#120;&#64;&#109;&#105;&#116;&#99;&#104;&#110;&#46;&#109;&#101;</a></li>
+<li><a href="https://mitchn.me">mitchn.me</a></li>
+<li>Minneapolis, MN</li>
+</ul>
+<h2>Technical skills</h2>
+<p><strong>Certifications</strong>: Red Hat Certified Systems Administrator (RHCSA), Certified Kubernetes Administrator (CKA), Certified Kubernetes Application Developer (CKAD)<br>
+<strong>Programming Languages and Tools</strong>: Golang, Terraform, Operator SDK, Docker, Kubernetes, Helm, Istio, Ansible</p>
+<h2>Experience</h2>
+<h3><span>Prefect, <em>Staff Platform Engineer</em></span> <span>May 2024 - Present</span></h3>
+<ul>
+<li>Promoted to Staff Engineer in December 2025 for technical leadership across platform infrastructure</li>
+<li>Drove the self-hosted Prefect Cloud initiative, building infrastructure tooling that enabled expansion to new, large customers</li>
+<li>Maintaineid the open source Prefect Terraform provider, bringing it to feature parity with Prefect Cloud and collaborating with community contributors</li>
+<li>Co-authored an open source Kubernetes operator for deploying Prefect, simplifying customer self-hosted installations</li>
+<li>Improved Prefect Cloud cluster reliability and performance through Istio service mesh enhancements</li>
+</ul>
+<h3><span>GitLab, <em>Senior Backend Engineer, Distribution Team</em></span> <span>April 2020 - May 2024</span></h3>
+<ul>
+<li>Promoted to Maintainer of the GitLab Operator for Kubernetes by driving it from proof of concept to general availability, developing the feature set and scheduling issues, becoming the top contributor within the first 6 months</li>
+<li>Promoted to Maintainer of the GitLab Helm Charts by implementing features, addressing bugs, and triaging issues submitted both internally and by our customers, becoming the top non-maintainer contributor within the first 12 months</li>
+<li>Supported the GitLab.com delivery team by troubleshooting the SaaS production instance in Kubernetes and developing features in the GitLab Helm Chart to enable better speed and stability</li>
+</ul>
+<h3><span>GE Transportation, <em>Sr. Build and Release Engineer</em></span> <span>August 2018 – April 2020</span></h3>
+<ul>
+<li>Built a CI/CD deployment pipeline for 20+ microservices using Kubernetes, Kustomize, and GitLab CI, enabling consistent, fault-tolerant application environments for one of the largest development teams</li>
+<li>Developed shared build, test, and release templates that ensured best practices and common toolsets across cloud-native application teams</li>
+<li>Integrated Checkmarx, SonarQube, and AquaSec security analysis into shared pipelines for four major teams using Docker-based reusable pipeline stages</li>
+</ul>
+<h3><span>GE Transportation, <em>Digital Technology Leadership Program Member</em></span> <span>July 2016 – July 2018</span></h3>
+<ul>
+<li><em>Rotation 4</em>: Cloud Architect - Enabled $991,000 in cost savings by migrating the Manufacturing Execution System to the cloud for a locomotive engine manufacturing plant, responsible for web and app server migration along with build and deploy automation using Chef, Jenkins, AWS EC2/S3/ELB, and Python</li>
+<li><em>Rotation 3</em>: Field Services Technical Product Manager - Reduced network management costs by $182,000 in 4 months by coordinating the removal of network hardware from customer service centers, providing sites with a 5-10x improvement in connectivity while reducing the company’s technology footprint through an LTE implementation</li>
+<li><em>Rotation 2</em>: Supply Chain Technical Project Manager – Created build and release automation with Jenkins for a Windows-based Manufacturing Execution System in use at a locomotive engine factory, enabling multiple releases to production per day along with infrastructure monitoring in New Relic</li>
+<li><em>Rotation 1</em>: DevOps Engineer - Supported the build and release process for a commercial software development team by integrating and automating web security scanning</li>
+</ul>
+<h2>Education</h2>
+<h3><span>Master of Science in Information Systems and Operations Management</span> <span>2015 &ndash; 2016</span></h3>
+<p>University of Florida: Hough Graduate School of Business | GPA: 3.85 / 4.00</p>
+<h3><span>Bachelor of Science in Business Administration – Information Systems</span> <span>2012 &ndash; 2015</span></h3>
+<p>University of Florida: Hough Graduate School of Business | GPA: 3.88 / 4.00</p></div>
+</body>
+</html>
