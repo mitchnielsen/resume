@@ -16,7 +16,7 @@
 ### <span>Prefect, _Staff Platform Engineer_</span> <span>May 2024 - Present</span>
  - Promoted to Staff Engineer in December 2025 for technical leadership across platform infrastructure
  - Drove the self-hosted Prefect Cloud initiative, building infrastructure tooling that enabled expansion to new, large customers
- - Maintaineid the open source Prefect Terraform provider, bringing it to feature parity with Prefect Cloud and collaborating with community contributors
+ - Maintained the open source Prefect Terraform provider, bringing it to feature parity with Prefect Cloud and collaborating with community contributors
  - Co-authored an open source Kubernetes operator for deploying Prefect, simplifying customer self-hosted installations
  - Improved Prefect Cloud cluster reliability and performance through Istio service mesh enhancements
 
